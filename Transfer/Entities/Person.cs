@@ -13,20 +13,24 @@ namespace Transfer.Models
 
     public class Person : IPerson
     {
+        private double _stress { get; set; }
+        //public int happiness {  get; set; }
+
+        /*
         private DateTime _calendar;
         private DateTime _birthDate;
         private List<Education> _educations;
         private string _stage {  get; set; }
         private List<Illness> illnesses;
-
+        */
         //private int infectionSusceptibility;
 
         public Person(DateTime calendar)
         {
-            _calendar = calendar;
-            _birthDate = _calendar;
+            //_calendar = calendar;
+            //_birthDate = _calendar;
         }
-
+        /*
         public void Update()
         {
             var currentLife = _calendar.Subtract(_birthDate);
@@ -40,7 +44,7 @@ namespace Transfer.Models
         public void AddEducation()
         {
 
-        }
+        }*/
         /*
         public void IncreaseAge()
         {
@@ -52,7 +56,7 @@ namespace Transfer.Models
             return _ageYears;
         }*/
     }
-
+    /*
     public class Illness
     {
         public string type { get; set; }
@@ -62,5 +66,5 @@ namespace Transfer.Models
     public class Education
     {
 
-    }
+    }*/
 }

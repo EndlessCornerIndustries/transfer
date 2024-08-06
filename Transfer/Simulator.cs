@@ -11,14 +11,15 @@ namespace Transfer
     {
         private SimulationTimer _timer;
 
-        private List<Family> _families;
-        private List<Business> _businesses;
-        private List<Government> _governments;
-        private CentralBank _centralBank;
-        private List<StockExchange> _stockExchanges;
+        //private List<Family> _families;
+        //private List<Business> _businesses;
+        //private List<Government> _governments;
+        //private CentralBank _centralBank;
+        //private List<StockExchange> _stockExchanges;
 
         public Simulator() {
             _timer = new SimulationTimer(new DateTime(1900, 01, 01));
+            /*
             _centralBank = new CentralBank();
 
             _stockExchanges = new List<StockExchange>() {
@@ -27,10 +28,12 @@ namespace Transfer
 
             SetupFamilies();
             SetupBusinesses();
+            */
         }
 
         public void Run()
         {
+            /*
             int maxIterations = 100;
 
             int iterations = 0;
@@ -42,9 +45,9 @@ namespace Transfer
 
                 UpdateFamilies();
                 UpdateBusinesses();
-            }
+            }*/
         }
-
+        /*
         public void SetupFamilies()
         {
             _families = new List<Family>()
@@ -74,6 +77,6 @@ namespace Transfer
             {
                 business.up
             }
-        }
+        }*/
     }
 }
